@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Scorecard Screens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Screen 1: Intro -->
+<section id="screen1" class="screen">
+  <h1>GitHub Scorecard</h1>
+  <input type="text" id="usernameInput" placeholder="Enter GitHub username" />
+  <button id="startBtn">Start</button>
+</section>
+
+<!-- Screen 2: GitHub Profile Results -->
+<section id="screen2" class="screen hidden">
+  <h2>Scorecard Results</h2>
+  <div id="resultsPanel"></div>
+  <button id="nextBtn">Next</button>
+</section>
+
+<!-- Screen 3: Terminal Prank -->
+<section id="screen3" class="screen hidden terminal-theme">
+  <div id="terminal">
+    <div>> Scorecard git@github.com</div>
+    <div>Connecting to github.com</div>
+    <div>Welcome to GitHub's Scorecard</div>
+    <div>Type 'help' for a list of commands.</div>
+  </div>
+  <div>
+    <span>&gt; </span>
+    <input type="text" id="command-input" autofocus autocomplete="off" />
+  </div>
+  <button id="finalBtn">Finish</button>
+</section>
+
+<!-- Screen 4: Thank You -->
+<section id="screen4" class="screen hidden">
+  <h2>Thank you for using GitHub Scorecard!</h2>
+  <p>Read the GitHub Docs and Come back soon.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
